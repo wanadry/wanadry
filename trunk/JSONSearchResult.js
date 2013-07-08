@@ -20,7 +20,7 @@ var config = searchFormConfig,
 function showResult(json) {
 	var entry = json.feed.entry ? json.feed.entry : "", url, summary, img;
 	skeleton  = '<h4>' + config.resultTitle + ' &quot;' + input.value + '&quot;</h4>';
-  skeleton += '<a title="Close" style="display:block;position:absolute;top:10px;right:12px;line-height:normal;text-decoration:none;color: #f00;background-color: #000;border-radius: 10px;padding: 0px 4px 0px 4px;font-size:150%;" href="#close" onclick="resultContainer.style.display=\'none\';return false;">&times;</a><ol>';
+  skeleton += '<a title="Close" style="display:block;position:absolute;top:10px;right:12px;line-height:normal;text-decoration:none;color:#f00;font-size:150%;" href="#close" onclick="resultContainer.style.display=\'none\';return false;">&times;</a><ol>';
 	if (entry === "") {
 		skeleton += '<li>' + config.noResult + '</li>';
 	}
