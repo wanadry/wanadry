@@ -1,0 +1,470 @@
+/* Mobile
+----------------------------------------------- */
+html body.mobile {
+  color: #000000;
+  background: rgb(236, 239, 245);
+  height: auto; width: auto;
+  background-size: 210px;
+  min-height: 480px;
+  min-width: 210px;
+  font-size: 11px;
+}
+
+.mobile .body-fauxcolumn-outer {
+  background: $(mobile.background.overlay);
+}
+
+html .mobile .mobile-date-outer, html .mobile .blog-pager {
+  border-bottom: none;
+  background: $(main.background);
+  margin-bottom: 10px;
+}
+
+.mobile .date-outer {
+  background: $(main.background);
+}
+
+html .mobile .mobile-date-outer, html .mobile .blog-pager,
+.mobile .header-outer, .mobile .main-outer,
+.mobile .post-outer, .mobile .footer-outer {
+/*
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -goog-ms-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+  -goog-ms-box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+  box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+*/
+}
+
+.mobile .post {
+  padding: 10px;
+}
+
+.mobile .main-inner .date-outer,
+.mobile .Attribution, .mobile .comments,
+.mobile .comments-content .comment-thread,
+.mobile .comments .comment-block {
+  padding: 4px;
+}
+
+.mobile .header-outer, .mobile .content-inner,
+.mobile .main-outer, .mobile .post-outer, .mobile .footer-outer { /*
+  -moz-border-radius: 3px; -webkit-border-radius: 3px;
+  border-radius: 3px; -goog-ms-border-radius: 3px; */
+}
+
+.mobile .content-outer,
+.mobile .main-outer ,
+.mobile .post-outer {
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  margin: 0pt auto;
+  font-size: 100%;
+}
+
+.mobile .content-inner {
+  /* border: 1px solid #c4cde0; */
+  text-shadow: none;
+}
+
+.mobile a:link, .mobile a:visited,
+.mobile-link-button a:link, .mobile-link-button a:visited {
+  text-decoration:none; color: rgb(59, 89, 152);
+}
+
+.mobile a:hover,.mobile-link-button a:hover {
+  text-decoration:none; color: rgb(59, 89, 152);
+  text-shadow: none;
+}
+
+/* Judul Halaman
+----------------------------*/
+.mobile .header-outer {
+  margin-bottom: 0px;
+  background: #3b5998;
+  background-color: #3b5998;
+  text-shadow: none;
+  padding: 2px;
+  border: none;
+}
+.mobile .header-inner .header .titlewrapper,
+.mobile .header-inner .header .descriptionwrapper {
+  margin: 0px; padding: 2px; text-align: justify;
+}
+.mobile .Header h1, .mobile .Header h1 a {
+  color: #ffffff; margin: 0px;  padding: 0px;
+}
+.mobile .Header .description {
+  color: #ffffff;
+}
+
+/* Menu Halaman
+----------------------------*/
+.mobile .tabs-inner .PageList .widget-content {
+  width: 100%; height: 100%;
+  padding: 0px; margin: 0px;
+}
+.mobile .tabs-inner .widget ul {
+  padding-top: 4px; padding-bottom: 4px;
+  text-align: left; border: none;
+  border-radius: 0px; height: auto;
+  background-color: #cccccc;
+}
+.mobile .tabs-inner .widget ul li,
+.mobile .tabs-inner .widget li {
+  border-top: none;
+  margin-right: 6px;
+}
+.mobile .tabs-inner .widget ul li:first-child,
+.mobile .tabs-inner .widget li:first-child {
+  border-left: medium none;
+  margin-left: 0px;
+}
+.mobile .tabs-inner .widget a {
+  color: #000000; margin-left: 0px; padding: 0px;
+}
+.mobile .tabs-inner .widget li a,
+.mobile .tabs-inner .widget li a:hover,
+.mobile .tabs-inner .widget li.selected a,
+.mobile .tabs-inner .widget li a:visited,
+.mobile .tabs-inner .widget li:first-child a {
+  color: #000000;
+  margin-right: 0px;
+  padding: 0px;
+  text-shadow: none;
+  text-transform: capitalize;
+  border: none;
+  background: inherit;
+}
+
+/* Judul Widget
+----------------------------*/
+.mobile-site-widget-title {
+  border-top: 1px solid rgb(19, 55, 131);
+  height: auto; overflow: hidden; padding-bottom: 1px;
+  text-align: center; width: auto;
+  background-color: #3b5998;
+}
+
+.mobile-site-widget-title a:link,
+.mobile-site-widget-title a:visited,
+.mobile-site-widget-title a:hover {
+  text-decoration:none;
+  color: #ffffff;
+}
+
+/* Area Widget
+----------------------------*/
+.mobile-site-widget-area {
+  width: auto; height: auto;
+  padding: 1px; padding-bottom: 0px;
+  text-align: center;
+  overflow: hidden;
+  border-top: 1px solid;
+  border-color: #E2C822;
+  background-color: #FFFBE2;
+}
+
+.mobile .widget ul {
+  padding: 4px;
+}
+.mobile .widget li, .mobile .BlogArchive #ArchiveList ul.flat li {
+  list-style: none;
+}
+.mobile .widget ul li:first-child, .mobile .widget #ArchiveList ul.flat li:first-child {
+  border-top: medium none;
+}
+.mobile .widget ul li, .mobile .widget #ArchiveList ul.flat li {
+  border-top: 1px dashed rgba(128, 128, 128, 0.5);
+}
+
+/* Area Posting Utama
+----------------------------*/
+html .main-outer {
+  margin: 0px;
+}
+.mobile #blog-pager {
+  padding: 0px; margin: 0px;
+  border: none;
+}
+.mobile .blog-pager {
+  border-bottom: none;
+  background: transparent none repeat scroll top center;
+}
+.mobile .mobile-index-comment {
+  text-align: right;
+}
+
+/* Area Artikel
+----------------------------*/
+.mobile .date-outer {
+  background-color: #ffffff;
+  border-top: 1px solid #3B5998;
+  border-bottom: 1px solid #ffffff;
+}
+.mobile .date-header {
+  margin-left: 0px; margin-right: 0px;
+  margin-top: 0px; margin-bottom: 1px;
+  padding: 0px; border: none;
+  text-align: left; text-decoration: none;
+  background: inherit; border-radius: 0px;
+  box-shadow: none; text-transform: capitalize;
+}
+.mobile .main-inner h2.date-header {
+  color: #000000;
+}
+.mobile h3.post-title {
+  margin: 0px;
+}
+.mobile-index-title {
+  width: 100%;
+}
+.mobile-index-contents {
+  color: #000000; width: 100%;
+}
+.mobile-bingkai-judul {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  height: auto; margin: 0px;
+  overflow: hidden; padding-left: 2px; padding-right: 2px;
+  width: 99,99%; text-align: justify;
+}
+.mobile-index-title,
+.mobile h3.mobile-index-title.entry-title,
+.mobile h3.post-title,
+.mobile h3.post-title a {
+  font-size: 14px;
+}
+#mobile-share-button {
+  border: 1px solid rgb(204, 204, 204);
+  background-color: rgb(248, 248, 248);
+  background-image: -moz-linear-gradient(center top , rgb(255, 255, 255), rgb(222, 222, 222));
+  padding: 0px 3px;
+}
+
+/* Kolom Kotak Komentar
+----------------------------*/
+.mobile .comments,
+.mobile #comments {
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(236, 239, 245);
+  padding: 2px;
+}
+.mobile #comments a {
+  color: #134f5c;
+}
+.mobile .comments .continue {
+border-top: 1px solid rgb(204, 204, 204);
+}
+.mobile #comments h4, .mobile #comments .comment-author a,
+.mobile #comments .comment-timestamp a {
+  color: #303030;
+}
+html .mobile .comments h4 {
+  padding: 0px;
+}
+.mobile .comments .comments-content .comment {
+  margin-bottom: 0px; padding-bottom: 0px;
+}
+.mobile .comments .comments-content .comment-content {
+  color: #303030;
+}
+.mobile .comments .comments-content .comment:first-child {
+  padding-top: 0px;
+}
+.mobile .comments-content .comment-thread,
+.mobile .comments .avatar-image-container {
+  border: 1px solid rgb(204, 204, 204);
+  background-color: #ffffff;
+  margin: 2px 0px;
+}
+.mobile .comments .avatar-image-container {
+  height: 36px;
+}
+.mobile .comments .comment-block {
+  border: 1px solid rgb(204, 204, 204);
+  background: #fafafa;
+  margin-left: 44px;
+}
+.mobile .comment-thread.inline-thread {
+  border: 1px solid rgb(204, 204, 204);
+  background: #f3f3f3;
+  margin-left: 8px;
+}
+.mobile .comment-form {
+  max-width: 100%;
+  text-align: justify;
+}
+
+
+/* Tombol Navigasi
+----------------------------*/
+html .home-link,
+html .blog-pager-newer-link,
+html .blog-pager-older-link {
+  height: auto;
+}
+.mobile #blog-pager-home-link {
+  /* width: 20px; */
+}
+.mobile #blog-pager-newer-link {
+  width: 20px;
+  margin-left: 0px;
+}
+.mobile #blog-pager-older-link {
+  width: 20px;
+  margin-right: 0px;
+}
+.mobile-link-button {
+  height: auto;
+}
+.mobile-navigation-area {
+  border-top: 1px solid rgb(59, 89, 152);
+  border-bottom: 1px solid rgb(194, 194, 194);
+  background-color: rgb(216, 223, 234);
+  height: auto; overflow: hidden;
+  padding: 4px; padding-bottom: 0px;
+  text-align: center; width: auto;
+}
+
+/* Area Footer
+----------------------------*/
+.mobile .footer-outer, .desainer {
+  color: rgb(59, 89, 152);
+  border: 1px solid #c4cde0;
+  background-color: rgb(216, 223, 234);
+  text-align: center;
+  padding-top: 2px;
+}
+.mobile .footer-outer a,
+.mobile .footer-outer a:visited,
+.mobile .footer-outer a:hover,
+.mobile .footer-outer .widget h2,
+.mobile .footer-inner .widget,
+.desainer a:link, .desainer a:visited,
+.desainer a {
+  color: rgb(59, 89, 152);
+  text-transform: capitalize;
+}
+
+/* Artikel Terkait Seluler
+----------------------------*/
+.mobile-related-posts {
+  background-color: rgb(255, 251, 226);
+  border: 1px solid rgb(226, 200, 34);
+  height: auto; margin: 0px;
+  overflow: auto; padding: 2px;
+  text-align: justify; width: auto;
+  color: #7f4c00;
+}
+.mobile-related-posts-area {
+  border: none; height: auto; margin: 0px;
+  overflow: auto; padding: 0px;
+  text-align: justify; width: auto;
+  color: inherit; background: inherit;
+}
+#comments h4 {
+  font-weight: bold;
+  margin: 5px 2px 5px 2px;
+}
+.cm_wrap {
+  clear: both;
+  margin-bottom: 10px;
+  float: right;
+  width: 100%;
+}
+.cm_head {
+  margin: 0;
+  width: 50px;
+  float: left;
+}
+.cm_avatar {
+  margin: 0;
+  vertical-align: middle;
+  border: 1px solid #DDD;
+  padding: 3px;
+  background: white;
+  width: 35px;
+  height: 35px;
+}
+.cm_reply {
+  padding-top: 5px;
+}
+.cm_reply a {
+  display: inline-block;
+  margin: 0;
+  padding: 1px 6px;
+  border: 1px solid #C4C4C4;
+  border-top-color: #E4E4E4;
+  border-left-color: #E4E4E4;
+  color: #424242 !important;
+  text-align: center;
+  text-shadow: 0 -1px 0 white;
+  text-decoration: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background: #EDEDED;
+  background: -webkit-gradient( linear, left top, left bottom, color-stop(.2, white), color-stop(1, #E5E5E5) );
+  background: -moz-linear-gradient( center top, white 20%, #E5E5E5 100% );
+}
+.cm_reply a:hover {
+  text-decoration: none !important;;
+  background: #ccc;;
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(.2, #eeeeee),color-stop(1, #cccccc));;
+  background: -moz-linear-gradient(center top,#eeeeee 20%,#cccccc 100%);;
+}
+.cm_entry {
+  padding: 10px;
+  background: #eeeeee;
+  background: -moz-linear-gradient( center top, white 20%, #f3f3f3 100% );
+  background: -webkit-gradient( linear, left top, left bottom, color-stop(.2, white), color-stop(1, #f3f3f3) );
+  border: 1px solid #E4E4E4;
+  overflow: hidden;
+}
+.cm_info {
+  margin-bottom: 5px;
+}
+.cm_name {
+  font-weight: bold;
+  font-size: 12px;
+  float: left;
+}
+.cm_date {
+  font-size: 10px;
+  float: right;
+  font-style: italic;
+  color: #ccc;
+}
+.cm_entry p {
+  margin: 0;
+  font-size: 12px;
+  color: #333333;
+}
+.cm_pagenavi {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #666;
+  text-shadow: 1px 1px white;
+  font-weight: bold;
+}
+.cm_pagenavi a {
+  color: #666;
+  text-decoration: none;
+  padding:10px;
+}
+.cm_pagenavi a:hover {
+  text-decoration: underline
+}
+.cm_pagenavi span {
+  color: #888;
+  background: #ffffff;
+  padding: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+/* ----- */
